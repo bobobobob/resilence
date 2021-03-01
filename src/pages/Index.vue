@@ -1,14 +1,13 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
+  <q-page class="q-py-xl">
+    <slider />
   </q-page>
 </template>
 
 <script>
+import Slider from 'src/components/Slider.vue'
 export default {
+  components: { Slider },
   name: 'PageIndex'
 }
 </script>

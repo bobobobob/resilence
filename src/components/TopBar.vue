@@ -2,7 +2,7 @@
   <nav class="top-bar" :class="{open: open}">
       <div class="wrapper">
         <router-link to="/" class="brand">
-            Resilence
+          <img alt="Tezos logo" src="~assets/logo.svg">  Resilence
         </router-link>
         <div class="top-menu">
             <q-btn flat color="dark" label="Home" to="/" />
@@ -55,6 +55,7 @@ export default {
     left: 0;
     right: 0;
     z-index: 4000;
+    background: #FFF;
 }
 .top-bar a {
     text-decoration: none;
@@ -66,6 +67,12 @@ export default {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     line-height: 1.05;
+}
+.top-bar .brand img {
+    display: inline;
+    width: 16px;
+    line-height: 0;
+    vertical-align: text-top;
 }
 .top-bar .top-menu {
     display: none;
