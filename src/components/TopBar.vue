@@ -5,15 +5,10 @@
             Resilence
         </router-link>
         <div class="top-menu">
-            <router-link to="/about" class="item">
-            About
-            </router-link>
-            <router-link to="/explore" class="item">
-            Browse
-            </router-link>
-            <router-link to="/collection" class="item">
-            Collection
-            </router-link>
+            <q-btn flat color="dark" label="Home" to="/" />
+            <q-btn flat color="dark" label="About" to="/about" />
+            <q-btn flat color="dark" label="Explore" to="/explore" />
+            <q-btn flat color="dark" label="Collection" to="/collection" />
         </div>
         <div class="toggle lt-sm"  @click="onOpenToggle">
             <div class="nav-icon">
@@ -50,7 +45,7 @@ export default {
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
-    padding: 0 1rem;
+    padding-left: 1rem;
     position: relative;
 }
 .top-bar {
@@ -85,6 +80,7 @@ export default {
     width: 100%;
     text-align: center;
     padding: 1rem;
+    text-transform: uppercase;
 }
 .toggle {
     position: absolute;
@@ -159,6 +155,15 @@ export default {
   transform: rotate(-135deg);
 }
 @media screen and (min-width: 600px) {
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-left: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .top-bar .top-menu {
     display: flex;
     flex-direction: row;

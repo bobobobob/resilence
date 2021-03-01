@@ -1,8 +1,8 @@
 <template>
-  <q-layout view="hHr lpR lfr" >
+  <q-layout view="hHr lpR lfr" style="padding-top: 68px">
     <top-bar />
 
-    <q-page-container>
+    <q-page-container style="max-width: 960px; margin: auto;">
       <router-view />
     </q-page-container>
 
