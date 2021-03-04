@@ -1,5 +1,5 @@
 <template>
-<div class="q-pa-md">
+<div class="q-pa-md q-mt-xl">
     <q-carousel
       v-model="slide"
       transition-prev="slide-right"
@@ -11,7 +11,7 @@
       infinite
       height="300px"
       width="900px"
-      class="bg-grey-1 rounded-borders"
+      class="bg-grey-1 rounded-borders desktop-only"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap">
@@ -22,19 +22,19 @@
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" :ratio="1" src="https://cdn.quasar.dev/img/quasar.jpg" />
+          <q-img class="rounded-borders col-4 full-height" :ratio="1" src="https://cdn.quasar.dev/img/quasar.jpg" />
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="3" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" :ratio="1" src="https://cdn.quasar.dev/img/cat.jpg" />
-          <q-img class="rounded-borders col-6 full-height" :ratio="1" src="https://cdn.quasar.dev/img/linux-avatar.png" />
+          <q-img class="rounded-borders col-4 full-height" :ratio="1" src="https://cdn.quasar.dev/img/cat.jpg" />
+          <q-img class="rounded-borders col-4 full-height" :ratio="1" src="https://cdn.quasar.dev/img/linux-avatar.png" />
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" :ratio="1" src="https://cdn.quasar.dev/img/material.png" />
-          <q-img class="rounded-borders col-6 full-height" :ratio="1" src="https://cdn.quasar.dev/img/donuts.png" />
+          <q-img class="rounded-borders col-4 full-height" :ratio="1" src="https://cdn.quasar.dev/img/material.png" />
+          <q-img class="rounded-borders col-4 full-height" :ratio="1" src="https://cdn.quasar.dev/img/donuts.png" />
         </div>
       </q-carousel-slide>
     </q-carousel>
